@@ -1,0 +1,134 @@
+📌 DAY 1 TOPICS
+
+What React really is (in simple words),
+JSX (how it actually works),
+Components (function components),
+Props (data passing),
+State (data that changes),
+Mini Task (must do),
+
+What React REALLY Is (Not Bookish)
+
+React is:
+A JavaScript library to build UI using components and state
+
+React does NOT:
+❌ Handle database
+❌ Handle backend
+❌ Automatically make apps fast
+
+React ONLY:
+✅ Updates UI efficiently
+✅ Manages UI state
+
+2️⃣ JSX (Very Important)
+
+JSX is NOT HTML.
+
+❌ Wrong Thinking
+
+JSX = HTML inside JS ❌
+
+✅ Correct Thinking
+
+JSX = JavaScript that looks like HTML
+
+Example:
+
+const element = <h1>Hello React</h1>;
+
+
+Behind the scenes:
+
+React.createElement("h1", null, "Hello React");
+
+
+⚠️ Why JSX rules matter:
+
+class ❌ → className ✅
+
+onclick ❌ → onClick ✅
+
+Only ONE parent element allowed
+
+3️⃣ First React Component
+
+React components are functions.
+
+function Welcome() {
+  return <h2>Hello, Intern 👋</h2>;
+}
+
+export default Welcome;
+
+
+Usage:
+
+<Welcome />
+
+
+💡 Rule:
+
+Component name must start with Capital letter
+
+4️⃣ Props (Passing Data)
+
+Props = data passed from parent to child
+
+Example:
+function User(props) {
+  return <h3>Name: {props.name}</h3>;
+}
+
+
+Usage:
+
+<User name="Roshan" />
+<User name="Amit" />
+
+
+👉 Same component, different data = reusability
+
+Better way (Destructuring)
+function User({ name }) {
+  return <h3>Name: {name}</h3>;
+}
+
+5️⃣ State (Data That Changes)
+
+State is component’s own memory.
+
+Example:
+import { useState } from "react";
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <>
+      <h2>Count: {count}</h2>
+      <button onClick={() => setCount(count + 1)}>
+        Increase
+      </button>
+    </>
+  );
+}
+
+
+📌 Important Rules:
+
+❌ Don’t update state directly (count++)
+
+✅ Always use setter function
+
+State change → component re-renders
+
+6️⃣ Props vs State (INTERVIEW GOLD)
+Props	State
+Passed from parent	Managed inside component
+Read-only	Can change
+Used for configuration	Used for interaction
+
+💬 Interview Answer:
+
+Props are used to pass data to components, while state is used to manage dynamic data inside a component.
