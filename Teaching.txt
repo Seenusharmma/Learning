@@ -1,0 +1,13 @@
+In React 
+core concept
+
+Differ.. Js & Jsx
+JS - js is nothing it isn the name extension of javascript
+JSx - jsx is nothing it isn the name extension of React
+
+
+Props - Props is the property of React where a data transfer between parent to child.
+Props Drilliing - you are student 😘      HOD       xyz             Principle 😒 ............Steps  
+Condetional Rendering if - else swich opertor 
+Lists Or Keys
+Event Hnadling - onClick, onSubmit Custom events
