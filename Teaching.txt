@@ -11,3 +11,5 @@ Props Drilliing - you are student 😘      HOD       xyz             Principle 
 Condetional Rendering if - else swich opertor 
 Lists Or Keys
 Event Hnadling - onClick, onSubmit Custom events
+
+Conditional Rendering - if - else swich opertor
